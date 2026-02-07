@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Together for Hope | معًا من أجل الأمل</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="floating-particles" id="particles"></div>
+
+    <div class="container">
+        <div class="card">
+            <!-- Corner Decorations -->
+            <div class="corner-decoration corner-tl"></div>
+            <div class="corner-decoration corner-br"></div>
+
+            <!-- Language Dropdown -->
+            <div class="language-dropdown">
+                <div class="lang-selector" id="langSelector">
+                    <i class="fas fa-globe"></i>
+                    <span id="currentLang">English</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="lang-menu" id="langMenu">
+                    <div class="lang-option" data-lang="en">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>English</span>
+                    </div>
+                    <div class="lang-option" data-lang="ar">
+                        <i class="fas fa-globe-asia"></i>
+                        <span>العربية</span>
+                    </div>
+                    <div class="lang-option" data-lang="fr">
+                        <i class="fas fa-globe-europe"></i>
+                        <span>Français</span>
+                    </div>
+                    <div class="lang-option" data-lang="es">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>Español</span>
+                    </div>
+                    <div class="lang-option" data-lang="de">
+                        <i class="fas fa-globe-europe"></i>
+                        <span>Deutsch</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heart Section -->
+            <div class="heart-section">
+                <div class="heart-glow"></div>
+                <span class="heart-icon">❤️</span>
+            </div>
+            
+            <h1 id="title">Together for Hope</h1>
+            <p class="subtitle" id="subtitle">Your donation makes a real difference in Gaza</p>
+            
+            <!-- Donation Options -->
+            <div class="donation-grid">
+                <div class="donation-option" data-amount="30">€30</div>
+                <div class="donation-option" data-amount="50">€50</div>
+                <div class="donation-option" data-amount="100">€100</div>
+                <div class="donation-option" data-amount="150">€150</div>
+                <div class="donation-option" data-amount="200">€200</div>
+                <div class="donation-option" data-amount="500">€500</div>
+                <div class="donation-option gold" data-amount="1000">€1,000</div>
+            </div>
+            
+            <!-- Custom Amount -->
+            <div class="custom-amount">
+                <label id="custom-label" for="customInput">Or enter a custom amount:</label>
+                <div class="custom-input">
+                    <input type="number" id="customInput" placeholder="Enter amount in euros" inputmode="decimal">
+                    <span class="currency">€</span>
+                </div>
+            </div>
+            
+            <!-- Donate Button -->
+            <button class="donate-button" id="donateBtn">Donate Now</button>
+            
+            <!-- Impact Note -->
+            <div class="impact-note">
+                <p>
+                    <i class="fas fa-check-circle"></i>
+                    <span id="impact-text">Every contribution helps provide essential aid to families in need</span>
+                </p>
+            </div>
+        </div>
+        
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/970592244923?text=Hello, I'd like to inquire about the Gaza donation campaign" 
+           target="_blank" 
+           class="whatsapp-button" id="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span id="whatsapp-text">Contact us via WhatsApp</span>
+        </a>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p id="footer-text">Secure donation via Stripe • 100% safe</p>
+            <p class="stripe-badge">
+                <i class="fas fa-lock"></i>
+                <span id="security-text">Encrypted and secure payments</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
